@@ -16,7 +16,7 @@
 - 学习如何用 Godot 控制外部进程
 - 作为你自己的开服器/管理面板的 **基础骨架**
 
-> 💡 核心逻辑由 [`godot-ender-core`](https://github.com/dorastarry/godot-ender-core) 插件提供 —— 它封装了“启动/停止/日志监听/配置持久化”等操作，你只需调用接口。
+> 💡 核心逻辑由 [`godot-ender-core`](https://github.com/dorastarry/godot-ender-core) 插件提供。
 
 ---
 
