@@ -1,0 +1,488 @@
+[gd_scene format=3 uid="uid://1ymckov2x3ks"]
+
+[ext_resource type="Script" uid="uid://igwgyphjhskd" path="res://addons/godot-ender-core/MCEnderCore.gd" id="1_53q0u"]
+[ext_resource type="Script" uid="uid://bdy00i24i16fp" path="res://main/user_ui.gd" id="2_pjrb6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pjrb6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wy1v"]
+bg_color = Color(0.8431838, 0.8431839, 0.84318364, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfbq2"]
+bg_color = Color(0.98234254, 0.9823423, 0.9823424, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4dugh"]
+bg_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c651c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0i4oc"]
+bg_color = Color(0.8158079, 0.8712109, 0.9426071, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grrlh"]
+bg_color = Color(0.75686276, 0.8117647, 0.8784314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xwkvk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67ri8"]
+bg_color = Color(0.7554987, 0.81225646, 0.8767895, 1)
+
+[sub_resource type="Theme" id="Theme_4dugh"]
+Button/colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+Button/colors/font_focus_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+Button/colors/font_hover_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+Button/colors/font_hover_pressed_color = Color(0.18717614, 0.18717614, 0.18717614, 1)
+Button/colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_pjrb6")
+Button/styles/hover = SubResource("StyleBoxFlat_3wy1v")
+Button/styles/normal = SubResource("StyleBoxFlat_kfbq2")
+Button/styles/pressed = SubResource("StyleBoxFlat_4dugh")
+ItemList/colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+ItemList/colors/font_hovered_color = Color(0.95, 0.95, 0.95, 1)
+ItemList/styles/focus = SubResource("StyleBoxEmpty_c651c")
+ItemList/styles/panel = SubResource("StyleBoxFlat_0i4oc")
+LineEdit/colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_grrlh")
+TextEdit/colors/caret_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+TextEdit/colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+TextEdit/styles/focus = SubResource("StyleBoxEmpty_xwkvk")
+TextEdit/styles/normal = SubResource("StyleBoxFlat_67ri8")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53q0u"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.53187376, 0.66018367, 0.7996136, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjrb6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.72558755, 0.8167712, 0.87330663, 0.7764706)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c651c"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.62076205, 0.7551606, 0.87851685, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Animation" id="Animation_53q0u"]
+resource_name = "Config"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(0.18301077, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -648)]
+}
+
+[sub_resource type="Animation" id="Animation_pjrb6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pjrb6"]
+_data = {
+&"Config": SubResource("Animation_53q0u"),
+&"RESET": SubResource("Animation_pjrb6")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xwkvk"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.59977317, 0.7287572, 0.8872094, 0.96862745)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Node" type="Node" unique_id=1983630894]
+
+[node name="UserUI" type="Control" parent="." unique_id=15455803]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_4dugh")
+script = ExtResource("2_pjrb6")
+
+[node name="Panel" type="Panel" parent="UserUI" unique_id=1568293974]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_53q0u")
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI" unique_id=1089190631]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/MarginContainer" unique_id=1917726374]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UserUI/MarginContainer/VBoxContainer" unique_id=2079739661]
+layout_mode = 2
+text = "Godot 开服器 - 示例"
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer" unique_id=775818353]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer" unique_id=13468962]
+layout_mode = 2
+
+[node name="Logs" type="TextEdit" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer/ScrollContainer" unique_id=1449140026]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+context_menu_enabled = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer" unique_id=2093806698]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel" type="Panel" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2" unique_id=1582718046]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pjrb6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2" unique_id=83920090]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer" unique_id=1288723237]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer" unique_id=955824101]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/Control" unique_id=619668897]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_c651c")
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/Control/Panel" unique_id=1901973337]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/Control/Panel/MarginContainer" unique_id=1389275649]
+layout_mode = 2
+
+[node name="ServerSatat" type="Label" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/Control/Panel/MarginContainer/VBoxContainer" unique_id=359592920]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 19
+text = "服务器运行状态：正常"
+
+[node name="PlayerSize" type="Label" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/Control/Panel/MarginContainer/VBoxContainer" unique_id=276503943]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 19
+text = "玩家人数：0"
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer" unique_id=261035690]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer" unique_id=277681988]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=967819632]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "启动服务器"
+
+[node name="Button2" type="Button" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1436435643]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "停止服务器"
+
+[node name="Button3" type="Button" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1868761464]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "强制停止服务器"
+
+[node name="Button4" type="Button" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer" unique_id=266643543]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "设置"
+
+[node name="MarginContainer2" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer" unique_id=1129313326]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2" unique_id=357464011]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer" unique_id=521862331]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer" unique_id=1327100732]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer/HBoxContainer" unique_id=872452718]
+layout_mode = 2
+text = "消息"
+
+[node name="LineEditMsg" type="LineEdit" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1178557917]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "消息 / 指令"
+context_menu_enabled = false
+
+[node name="Button_sen" type="Button" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer/HBoxContainer" unique_id=1308894457]
+layout_mode = 2
+text = " 发送 "
+
+[node name="ItemList" type="ItemList" parent="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer" unique_id=1868213708]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Config" type="Control" parent="UserUI" unique_id=1319024025]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UserUI/Config" unique_id=1673619423]
+libraries/ = SubResource("AnimationLibrary_pjrb6")
+
+[node name="Control" type="Control" parent="UserUI/Config" unique_id=478759404]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/Config/Control" unique_id=612628713]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="UserUI/Config/Control/VBoxContainer" unique_id=148032241]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button_c" type="Button" parent="UserUI/Config/Control/VBoxContainer/Control" unique_id=285398191]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "X"
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/Config/Control/VBoxContainer" unique_id=940652746]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="UserUI/Config/Control/VBoxContainer/MarginContainer" unique_id=1288329526]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xwkvk")
+
+[node name="MarginContainer" type="MarginContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel" unique_id=1875309822]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer" unique_id=974261554]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=630796732]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control" unique_id=1670509675]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control/HBoxContainer" unique_id=1110471213]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "java路径 :"
+
+[node name="LineEdit" type="LineEdit" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control/HBoxContainer" unique_id=362372823]
+layout_mode = 2
+size_flags_horizontal = 3
+context_menu_enabled = false
+
+[node name="Control2" type="Control" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=30044961]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control2" unique_id=590295598]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control2/HBoxContainer" unique_id=2099649548]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "服务器核心路径 :"
+
+[node name="LineEdit" type="LineEdit" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control2/HBoxContainer" unique_id=1368676335]
+layout_mode = 2
+size_flags_horizontal = 3
+context_menu_enabled = false
+
+[node name="Control3" type="Control" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=740378471]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control3" unique_id=564165696]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control3/HBoxContainer" unique_id=917023421]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "最小内存 (MB) :"
+
+[node name="LineEdit" type="LineEdit" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control3/HBoxContainer" unique_id=1194309751]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1024"
+placeholder_text = "2048"
+context_menu_enabled = false
+
+[node name="Control4" type="Control" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=306054027]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control4" unique_id=599050757]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control4/HBoxContainer" unique_id=1602273763]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "最大内存 (MB) :"
+
+[node name="LineEdit" type="LineEdit" parent="UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control4/HBoxContainer" unique_id=1300188331]
+layout_mode = 2
+size_flags_horizontal = 3
+context_menu_enabled = false
+
+[node name="MCEnderCore" type="Node" parent="." unique_id=1004728644 node_paths=PackedStringArray("Bind_ControlLog", "Bind_ControlErr", "Bind_Controljava", "Bind_Controlserver", "Bind_ControlMin", "Bind_ControlMax", "Bind_ControlPlayList")]
+script = ExtResource("1_53q0u")
+server_core_jar_path = "res://Server/fabric-server-mc.1.21.11-loader.0.19.2-launcher.1.1.1.jar"
+eulatxt = true
+Bind_ControlLog = NodePath("../UserUI/MarginContainer/VBoxContainer/MarginContainer/ScrollContainer/Logs")
+Bind_ControlErr = NodePath("../UserUI/MarginContainer/VBoxContainer/MarginContainer/ScrollContainer/Logs")
+Bind_Controljava = NodePath("../UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control/HBoxContainer/LineEdit")
+Bind_Controlserver = NodePath("../UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control2/HBoxContainer/LineEdit")
+Bind_ControlMin = NodePath("../UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control3/HBoxContainer/LineEdit")
+Bind_ControlMax = NodePath("../UserUI/Config/Control/VBoxContainer/MarginContainer/Panel/MarginContainer/VBoxContainer/Control4/HBoxContainer/LineEdit")
+Bind_ControlPlayList = NodePath("../UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/ItemList")
+metadata/_custom_type_script = "uid://igwgyphjhskd"
+
+[connection signal="pressed" from="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Button" to="UserUI" method="_on_button_pressed"]
+[connection signal="pressed" from="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Button2" to="UserUI" method="_on_button_2_pressed"]
+[connection signal="pressed" from="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Button3" to="UserUI" method="_on_button_3_pressed"]
+[connection signal="pressed" from="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/VBoxContainer/MarginContainer/HBoxContainer/Button4" to="UserUI" method="_on_button_4_pressed"]
+[connection signal="pressed" from="UserUI/MarginContainer/VBoxContainer/MarginContainer2/HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer/HBoxContainer/Button_sen" to="UserUI" method="_on_button_sen_pressed"]
+[connection signal="pressed" from="UserUI/Config/Control/VBoxContainer/Control/Button_c" to="UserUI" method="_on_button_c_pressed"]
+[connection signal="MCEnderCore_Player_join" from="MCEnderCore" to="UserUI" method="_on_mc_ender_core_mc_ender_core_player_join"]
+[connection signal="MCEnderCore_Player_leave" from="MCEnderCore" to="UserUI" method="_on_mc_ender_core_mc_ender_core_player_leave"]
