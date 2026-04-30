@@ -1,6 +1,6 @@
 # 🌍 godot-mc-server-launcher  
 > 用 Godot 4.6.2 + C# 打造的 Minecraft Java 版开服器 Demo  
-> 基于 [`godot-ender-core`](https://github.com/dorastarry/godot-ender-core) 插件 —— 你的服务器管理“守护者协议”已就位 ✨
+> 基于 [`godot-ender-core`](https://github.com/dorastarry/godot-ender-core) 插件✨
 
 ![Godot + Minecraft = ❤️](https://github.com/dorastarry/godot-mc-server-launcher/blob/main/lan.png) <!-- 可替换为你的截图 -->
 
