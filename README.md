@@ -38,12 +38,6 @@
 
 ---
 
-💌 致谢
-Godot Engine —— 让游戏开发回归创造本身
-PaperMC —— 高性能 Minecraft 服务端
-
----
-
 📜 许可证
 本 Demo 项目：MIT License © 2026 DuoDuo (Dora) 朵朵
 核心插件 `godot-ender-core`：MIT License
